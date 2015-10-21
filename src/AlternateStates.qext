@@ -1,0 +1,7 @@
+{
+	"name": "Alternate States",
+	"description": "Manage alternate states",
+	"type": "visualization",
+	"version": "1.0",
+	"author": "Svetlin Simeonov"
+}
