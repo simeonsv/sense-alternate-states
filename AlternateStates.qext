@@ -1,7 +1,14 @@
 {
 	"name": "Alternate States",
-	"description": "Manage alternate states",
+	"description": "Add/remove alternate states",
 	"type": "visualization",
 	"version": "1.0",
-	"author": "Svetlin Simeonov"
+	"preview": "preview.png",
+	"author": "Svetlin Simeonov",
+	"keywords": "qlik-sense, alternate, state",
+	"license": "MIT",
+	"repository": "https://github.com/simeonsv/sense-alternate-states.git",
+	"dependencies": {
+		"qlik-sense": ">=1.1.x"
+	}
 }
