@@ -33,7 +33,7 @@ define(["jquery", "qlik"], function($, qlik) {
 		  
 			getLayoutPromise.then(function(layout){			 
 			  $.each(layout.qStateNames, function(key, value) {						
-				html += "<option value='" + value + "'>" + value + "</option>";
+				html += '<option value="' + value.replace(/\"/g, '&quot;') + '">' + value + '</option>';
 			  });
 			});
 			 
@@ -51,6 +51,7 @@ define(["jquery", "qlik"], function($, qlik) {
 						});						
 						break;
 					case 'removeAltState':
+						console.log($element.find("#altStates").val());
 						app.removeAlternateState($element.find("#altStates").val());
 						app.doSave().then(function(){
 						  self.paint($element, layout);
