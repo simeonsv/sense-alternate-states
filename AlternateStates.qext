@@ -2,7 +2,7 @@
 	"name": "Alternate States",
 	"description": "Add/remove alternate states",
 	"type": "visualization",
-	"version": "1.0",
+	"version": "1.0.1",
 	"preview": "preview.png",
 	"author": "Svetlin Simeonov",
 	"keywords": "qlik-sense, alternate, state",

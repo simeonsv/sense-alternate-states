@@ -7,7 +7,7 @@ define(["jquery", "qlik"], function($, qlik) {
 
 	return {
 		initialProperties : {
-			version : 1.0			
+			version : 1.0.1			
 		},
 		definition : {
 			type : "items",
@@ -50,8 +50,7 @@ define(["jquery", "qlik"], function($, qlik) {
 						  self.paint($element, layout);
 						});						
 						break;
-					case 'removeAltState':
-						console.log($element.find("#altStates").val());
+					case 'removeAltState':						
 						app.removeAlternateState($element.find("#altStates").val());
 						app.doSave().then(function(){
 						  self.paint($element, layout);
