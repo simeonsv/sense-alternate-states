@@ -7,7 +7,7 @@ define(["jquery", "qlik"], function($, qlik) {
 
 	return {
 		initialProperties : {
-			version : 1.0.1			
+			version : 1.1			
 		},
 		definition : {
 			type : "items",
@@ -31,8 +31,8 @@ define(["jquery", "qlik"], function($, qlik) {
 		  
 		    var getLayoutPromise = app.getAppLayout();
 		  
-			getLayoutPromise.then(function(layout){			 
-			  $.each(layout.qStateNames, function(key, value) {						
+			getLayoutPromise.then(function(result){			 
+			  $.each(result.layout.qStateNames, function(key, value) {						
 				html += '<option value="' + value.replace(/\"/g, '&quot;') + '">' + value + '</option>';
 			  });
 			});
